@@ -1,0 +1,6 @@
+11:41:54.178 [main] FATAL b.Log4j2Prac - fatal error
+11:41:54.194 [main] ERROR b.Log4j2Prac - error
+11:42:19.111 [main] DEBUG a.Log4jPrac - debugging
+11:42:19.121 [main] INFO  a.Log4jPrac - information
+11:42:19.121 [main] ERROR a.Log4jPrac - errof file
+11:42:19.122 [main] FATAL a.Log4jPrac - fatal error

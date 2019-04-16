@@ -1,0 +1,21 @@
+package excelpractice;
+
+import java.io.FileInputStream;
+
+import java.io.IOException;
+
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+public class DataDrivenTest {
+
+	public static void main(String[] args) throws IOException {
+		FileInputStream f = new FileInputStream("C:\\Users\\WINDOWS_10\\Desktop\\Book1.xlsx");
+	   XSSFWorkbook  x = new XSSFWorkbook(f);
+	   int s=x.getNumberOfSheets();
+	   for(int i=0;i<s;i++){
+		   
+	   }
+
+	}
+
+}

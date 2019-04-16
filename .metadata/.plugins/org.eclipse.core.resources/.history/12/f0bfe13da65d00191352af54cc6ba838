@@ -1,0 +1,7 @@
+Feature: login into application
+Scenario: test case validation
+Given intialization of browser with chrome
+And navigate to "https://www.qaclickacademy.com" website
+And click on login link and navigate to login page
+When enter the "test99@gmail.com" and "123456" and click on login
+Then verify if the user has successfully logged in

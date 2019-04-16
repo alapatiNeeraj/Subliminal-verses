@@ -1,0 +1,34 @@
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+
+public class AutoSuggestiveDropdown {
+
+	public static void main(String[] args) throws InterruptedException {
+		System.setProperty("webdriver.chrome.driver","C:\\Users\\WINDOWS_10\\Desktop\\Selenium\\drivers\\chromedriver.exe");
+		WebDriver drive = new ChromeDriver();
+		drive.get("https://www.makemytrip.com");
+		WebElement src = drive.findElement(By.id("hp-widget__sfrom"));
+		
+		src.sendKeys("HYD");
+		Thread.sleep(2000);
+		for(int i=1;i<3; i++){
+			src.sendKeys(Keys.ARROW_DOWN);
+			}
+		src.sendKeys(Keys.ENTER);
+		
+	WebElement des=	drive.findElement(By.id("hp-widget__sTo"));
+
+	des.sendKeys("AUS");
+	Thread.sleep(2000);
+	for(int i=1;i<8;i++){
+		des.sendKeys(Keys.ARROW_DOWN);
+	}
+		des.sendKeys(Keys.ENTER);
+
+	}
+
+}

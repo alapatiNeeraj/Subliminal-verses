@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Loan">
+  <test thread-count="5" name="PersonalLoan">
+    <classes>
+      <class name="testngprac.Prac"/>
+      <class name="testngprac.Prac2"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name=" car loan">
+   <classes>
+     <class name="testngprac.Prac3">
+     <methods>
+     <exclude name = "mobile.*"/>
+     </methods>
+     </class>
+     </classes>
+     
+  </test>
+  
+  <test name=" home loan">
+  <classes>
+     <class name="testngprac.Prac4">
+     <methods>
+     <include name = "mobilehomeloan"/>
+     </methods>
+     </class>
+     </classes>
+  </test>
+</suite> <!-- Suite -->

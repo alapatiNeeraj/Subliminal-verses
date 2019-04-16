@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="loan" parallel="tests" thread-count="5">
+<listeners>
+<listener class-name="practice.Listener" />
+</listeners>
+<parameter name="URL" value="speedforce.com"/>
+  <test name="ploan" parallel="classes" thread-count="5">
+  <parameter name="URL2" value="loudwire.com"/>
+   <parameter name="APIkey/username" value="345621"/>
+    <classes>
+      <class name="practice.prac"/>
+      <class name="practice.prac2">
+      <methods>
+      <exclude name ="api.*"/>
+      </methods>
+      </class>
+       </classes>
+       </test>
+  <!-- Test -->
+  
+  <test name="cloan">
+    <classes>
+  <class name="practice.Prac3">
+  <methods>
+  <exclude name="mobilecloan"/>
+  </methods>
+  </class>
+  </classes>
+   </test>
+   
+   <test name="Hloan">
+    <classes>
+<class name="practice.Prac4">
+<methods>
+<exclude name="mobilehloan"/>
+</methods>
+  </class>
+  </classes>
+   </test>
+   
+</suite> <!-- Suite -->
+

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="loan">
+  <test name="smoke">
+  <groups>
+  <run>
+  <exclude name="smoke test"/>
+  </run>
+  </groups>
+    <classes>
+      <class name="practice.prac"/>
+      <class name="practice.prac2"/>
+     <class name="practice.Prac3"/>
+  <class name="practice.Prac4"/>
+
+
+ 
+  </classes>
+   </test>
+   
+</suite> <!-- Suite -->
+

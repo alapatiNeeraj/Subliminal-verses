@@ -1,0 +1,34 @@
+package stepdefinition;
+
+import cucumber.api.PendingException;
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.When;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.And;
+import cucumber.api.junit.Cucumber;
+import org.junit.runner.RunWith;
+
+@RunWith(Cucumber.class)
+public class StepDefinition {
+
+    @Given("^user is on netbanking landing page$")
+    public void user_is_on_netbanking_landing_page() throws Throwable {
+        throw new PendingException();
+    }
+
+    @When("^user has to login into app with username and password$")
+    public void user_has_to_login_into_app_with_username_and_password() throws Throwable {
+        throw new PendingException();
+    }
+
+    @Then("^Netbanking home page is populated$")
+    public void netbanking_home_page_is_populated() throws Throwable {
+        throw new PendingException();
+    }
+
+    @And("^all the cards are displayed$")
+    public void all_the_cards_are_displayed() throws Throwable {
+        throw new PendingException();
+    }
+
+}

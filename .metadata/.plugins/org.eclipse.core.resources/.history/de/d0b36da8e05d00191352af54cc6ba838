@@ -1,0 +1,26 @@
+package dbt;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+public class DbtPrac {
+
+	public static void main(String[] args) throws SQLException {
+		String host="localhost";
+		String port="3306";
+		
+		
+		// TODO Auto-generated method stub
+Connection co=DriverManager.getConnection("jdbc:mysql://" + host + ":"+ port +"/prac","root","speedforce1234");
+Statement s= co.createStatement();
+ResultSet re =s.executeQuery("select * from prac where scenario='mike'");
+while(re.next()){
+System.out.println(re.getString("username"));
+System.out.println(re.getString("password"));
+}
+	}
+
+}

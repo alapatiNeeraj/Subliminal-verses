@@ -1,0 +1,43 @@
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
+
+
+public class E2EAssignment {
+
+	public static void main(String[] args) throws InterruptedException {
+		System.setProperty("webdriver.chrome.driver","C:\\Users\\WINDOWS_10\\Desktop\\Selenium\\drivers\\chromedriver.exe");
+		WebDriver drive = new ChromeDriver();
+		drive.get("https://www.cleartrip.com");
+		
+		WebElement a =drive.findElement(By.id("FromTag"));
+		a.sendKeys("Hyderabad");
+		a.sendKeys(Keys.ENTER);
+		WebElement b= drive.findElement(By.id("ToTag"));
+		
+		b.sendKeys("bangalore");
+		Thread.sleep(4000);
+		b.sendKeys(Keys.ENTER);
+		Thread.sleep(3000);
+	drive.findElement(By.cssSelector("a.ui-state-default.ui-state-highlight")).click();
+	Select s = new Select(drive.findElement(By.id("Infants")));
+	drive.findElement(By.id("Infants")).click();
+	s.selectByValue("1");
+	
+	drive.findElement(By.id("MoreOptionsLink")).click();
+	Thread.sleep(2000);
+	WebElement c =drive.findElement(By.id("AirlineAutocomplete"));
+	c.sendKeys("air");
+	Thread.sleep(2000);
+	for(int i=1;i<3;i++){
+		c.sendKeys(Keys.ARROW_DOWN);
+		}
+		c.sendKeys(Keys.ENTER);
+		Thread.sleep(2000);
+	drive.findElement(By.id("SearchBtn")).click();
+	}
+
+}

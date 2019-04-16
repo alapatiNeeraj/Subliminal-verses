@@ -1,0 +1,20 @@
+package frames;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class FrameCount {
+
+	public static void main(String[] args) {
+		System.setProperty("webdriver.chrome.driver","C:\\Users\\WINDOWS_10\\Desktop\\Selenium\\drivers\\chromedriver.exe");
+		WebDriver drive = new ChromeDriver();
+		drive.get("http://www.qaclickacademy.com/practice.php");
+
+		public static int framecount(WebDriver drive){
+			int i;
+			drive.findElement(arg0)
+		return i;
+		}
+	}
+
+}

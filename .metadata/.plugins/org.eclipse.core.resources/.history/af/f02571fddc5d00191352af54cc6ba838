@@ -1,0 +1,12 @@
+package dbt;
+
+import java.sql.DriverManager;
+
+public class DbtPrac {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+DriverManager.getConnection("aa", "root", "speedforce1234");
+	}
+
+}

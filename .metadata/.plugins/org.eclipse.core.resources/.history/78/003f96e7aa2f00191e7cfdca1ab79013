@@ -1,0 +1,35 @@
+package frames;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class FrameCount {
+
+	public static void main(String[] args) {
+		System.setProperty("webdriver.chrome.driver","C:\\Users\\WINDOWS_10\\Desktop\\Selenium\\drivers\\chromedriver.exe");
+		WebDriver drive = new ChromeDriver();
+		drive.get("http://www.qaclickacademy.com/practice.php");
+		drive.manage().window().maximize();
+		int num= frameNumber(drive,By.linkText("Courses"));
+		drive.switchTo().frame(num);
+		}
+		public static int frameNumber(WebDriver drive By by){
+			int i ;
+		int framecount=	drive.findElements(By.tagName("iframe")).size();
+			for (i=0;i<framecount;i++){
+				drive.switchTo().frame(i);
+				int count= drive.findElements(by).size();
+				if (count>0){
+					break;
+				}
+				else{
+					System.out.println("keep looping");
+				}
+			}
+		
+			return i;
+		}
+	
+}
+

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;E2EProjectcopy&apos;" deleteContents="false" description="Delete resource &apos;E2EProjectcopy&apos;" element1="/E2EProjectcopy" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1554648897068"/>
+</session>

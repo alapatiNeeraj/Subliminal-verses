@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;jprac&apos; to &apos;Jmeterproject/src&apos;&#x0D;&#x0A;- Original project: &apos;Intro&apos;&#x0D;&#x0A;- Destination element: &apos;Jmeterproject/src&apos;&#x0D;&#x0A;- Original element: &apos;Intro/src/jprac&apos;" description="Copy package" destination="=Jmeterproject/src" element1="/src&lt;jprac" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1555173843181" version="1.0"/>
+</session>

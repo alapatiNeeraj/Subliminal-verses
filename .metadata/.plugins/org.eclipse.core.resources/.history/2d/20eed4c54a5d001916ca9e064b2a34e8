@@ -1,0 +1,7 @@
+Feature: login into application
+Scenario: test case validation
+Given intialization of browser with chrome
+And navigate to "qaclickacademy" website
+And click on login link and navigate to login page
+When enter the "username" and "password" and click on login
+Then verify if the user has successfully logged in

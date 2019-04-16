@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="5" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Loan" duration-ms="250" started-at="2019-02-25T17:33:33Z" finished-at="2019-02-25T17:33:33Z">
+    <groups>
+    </groups>
+    <test name="PersonalLoan" duration-ms="110" started-at="2019-02-25T17:33:33Z" finished-at="2019-02-25T17:33:33Z">
+      <class name="testngprac.Prac">
+        <test-method status="PASS" signature="demo()[pri:0, instance:testngprac.Prac@5ae9a829]" name="demo" duration-ms="32" started-at="2019-02-25T23:03:33Z" finished-at="2019-02-25T23:03:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- demo -->
+        <test-method status="PASS" signature="speed()[pri:0, instance:testngprac.Prac@5ae9a829]" name="speed" duration-ms="15" started-at="2019-02-25T23:03:33Z" finished-at="2019-02-25T23:03:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- speed -->
+      </class> <!-- testngprac.Prac -->
+      <class name="testngprac.Prac2">
+        <test-method status="PASS" signature="metal()[pri:0, instance:testngprac.Prac2@2ef5e5e3]" name="metal" duration-ms="0" started-at="2019-02-25T23:03:33Z" finished-at="2019-02-25T23:03:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- metal -->
+      </class> <!-- testngprac.Prac2 -->
+    </test> <!-- PersonalLoan -->
+    <test name=" car loan" duration-ms="15" started-at="2019-02-25T17:33:33Z" finished-at="2019-02-25T17:33:33Z">
+      <class name="testngprac.Prac3">
+        <test-method status="PASS" signature="loginapicarloan()[pri:0, instance:testngprac.Prac3@6767c1fc]" name="loginapicarloan" duration-ms="15" started-at="2019-02-25T23:03:33Z" finished-at="2019-02-25T23:03:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginapicarloan -->
+        <test-method status="PASS" signature="last()[pri:0, instance:testngprac.Prac3@6767c1fc]" name="last" is-config="true" duration-ms="0" started-at="2019-02-25T23:03:33Z" finished-at="2019-02-25T23:03:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- last -->
+      </class> <!-- testngprac.Prac3 -->
+    </test> <!--  car loan -->
+    <test name=" home loan" duration-ms="15" started-at="2019-02-25T17:33:33Z" finished-at="2019-02-25T17:33:33Z">
+      <class name="testngprac.Prac4">
+        <test-method status="PASS" signature="first()[pri:0, instance:testngprac.Prac4@26be92ad]" name="first" is-config="true" duration-ms="0" started-at="2019-02-25T23:03:33Z" finished-at="2019-02-25T23:03:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- first -->
+        <test-method status="PASS" signature="mobilehomeloan()[pri:0, instance:testngprac.Prac4@26be92ad]" name="mobilehomeloan" duration-ms="0" started-at="2019-02-25T23:03:33Z" finished-at="2019-02-25T23:03:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mobilehomeloan -->
+      </class> <!-- testngprac.Prac4 -->
+    </test> <!--  home loan -->
+  </suite> <!-- Loan -->
+</testng-results>

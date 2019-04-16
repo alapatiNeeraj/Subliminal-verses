@@ -1,0 +1,37 @@
+package pageobject;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+
+public class LoggedinPage {
+	public WebDriver drive;
+	
+	
+	public LoggedinPage(WebDriver drive){
+		this.drive= drive;
+	}
+
+
+
+
+By login =By.cssSelector("a[href*='qaclickacademy.usefedora.com/sign_in']");
+By title= By.cssSelector("div.text-center");
+By navigatebar= By.cssSelector("ul.nav.navbar-nav.navbar-right");
+
+
+
+
+
+public WebElement loginselect(){
+	return drive.findElement(login);
+}
+
+public WebElement Title() {
+	return drive.findElement(title);
+}
+public WebElement navigationbar(){
+	return drive.findElement(navigatebar);
+}
+}

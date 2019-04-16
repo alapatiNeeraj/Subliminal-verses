@@ -1,0 +1,46 @@
+package pageobject;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+
+public class LoginPage {
+	public WebDriver drive;
+	
+	
+	public LoginPage(WebDriver drive){
+		this.drive= drive;
+	}
+
+By email = By.id("user_email");
+By password = By.id("user_password");
+By loginbutton = By.name("commit");
+By popup= By.xpath("//button[text()='NO THANKS']");
+
+public WebElement emailAdd(){
+	return drive.findElement(email);
+}
+public WebElement pass(){
+	return drive.findElement(password);
+}
+
+public WebElement lb(){
+	return drive.findElement(loginbutton);
+}
+
+public WebElement popuphandle(){
+	return drive.findElement(popup);
+	
+}
+
+public List<WebElement> popupdisplayed(){
+	return drive.findElements(popup);
+	
+}
+
+
+
+}

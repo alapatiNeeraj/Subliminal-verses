@@ -1,0 +1,25 @@
+package slabs;
+
+import java.net.URI;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
+
+public class SauceLabs {
+	public static final String USERNAME = "rahul2";
+
+	  public static final String ACCESS_KEY = "xxxxx";
+
+	  public static final String URL = "http://" + USERNAME + ":" + ACCESS_KEY + "@ondemand.saucelabs.com:80/wd/hub";
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+DesiredCapabilities cap = new DesiredCapabilities().chrome();
+cap.setCapability("platform", "Windows 7");
+cap.setCapability("version", "50.0");
+
+WebDriver drive= new RemoteWebDriver(new URI(URL), cap);
+
+	}
+
+}
